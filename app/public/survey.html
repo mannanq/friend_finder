@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <title>Survey Page</title>
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <style>
+      #match-photo {
+        height: 300px;
+        width: 300px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron text-center">
+        <h2>Fill in the survey</h2>
+      </div>
+      <form>
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input
+            type="text"
+            class="form-control"
+            id="name"
+            placeholder="Enter name"
+          />
+        </div>
+        <div class="form-group">
+          <label for="image">Image url</label>
+          <input
+            type="text"
+            class="form-control"
+            id="image"
+            placeholder="Password"
+          />
+        </div>
+      </form>
+      <p>Are you a retard?</p>
+      <div class="form-group">
+        <select class="form-control" id="q1">
+          <option>1 (Not at all!)</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5 (Totally!)</option>
+        </select>
+      </div>
+      <p>Are you a retard?</p>
+      <div class="form-group">
+        <select class="form-control" id="q2">
+          <option>1 (Not at all!)</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5 (Totally!)</option>
+        </select>
+      </div>
+      <p>Are you a retard?</p>
+      <div class="form-group">
+        <select class="form-control" id="q3">
+          <option>1 (Not at all!)</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5 (Totally!)</option>
+        </select>
+      </div>
+      <p>Are you a retard?</p>
+      <div class="form-group">
+        <select class="form-control" id="q4">
+          <option>1 (Not at all!)</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5 (Totally!)</option>
+        </select>
+      </div>
+      <p>Are you a retard?</p>
+      <div class="form-group">
+        <select class="form-control" id="q5">
+          <option>1 (Not at all!)</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5 (Totally!)</option>
+        </select>
+      </div>
+      <p>Are you a retard?</p>
+      <div class="form-group">
+        <select class="form-control" id="q6">
+          <option>1 (Not at all!)</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5 (Totally!)</option>
+        </select>
+      </div>
+      <p>Are you a retard?</p>
+      <div class="form-group">
+        <select class="form-control" id="q7">
+          <option>1 (Not at all!)</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5 (Totally!)</option>
+        </select>
+      </div>
+      <p>Are you a retard?</p>
+      <div class="form-group">
+        <select class="form-control" id="q8">
+          <option>1 (Not at all!)</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5 (Totally!)</option>
+        </select>
+      </div>
+      <p>Are you a retard?</p>
+      <div class="form-group">
+        <select class="form-control" id="q9">
+          <option>1 (Not at all!)</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5 (Totally!)</option>
+        </select>
+      </div>
+      <p>Are you a retard?</p>
+      <div class="form-group">
+        <select class="form-control" id="q10">
+          <option>1 (Not at all!)</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5 (Totally!)</option>
+        </select>
+      </div>
+
+      <div
+        class="modal fade"
+        id="exampleModal"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <h4 id="match-name"></h4>
+              <img alt="match pic" id="match-photo" />
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-dismiss="modal"
+              >
+                Close
+              </button>
+              <button type="button" class="btn btn-primary">
+                Save changes
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <button
+        id="submit"
+        class="btn btn-success btn-large"
+        data-toggle="modal"
+        data-target="#exampleModal"
+      >
+        Submit
+      </button>
+      <a href="/" class="btn btn-large-danger">Home</a>
+    </div>
+  </body>
+  <script>
+    $('#submit').on('click', e => {
+      e.preventDefault();
+
+      let name = $('#name')
+        .val()
+        .trim();
+      let photo = $('#image')
+        .val()
+        .trim();
+      console.log(name);
+      console.log(photo);
+
+      let scoreArr = [];
+      let i = 1;
+      do {
+        var num = $(`#q${i}`)
+          .val()
+          .trim();
+        scoreArr.push(num);
+        i++;
+      } while (i < 11);
+      console.log(scoreArr);
+
+      let newFriend = {
+        name: name,
+        photo: photo,
+        score: scoreArr
+      };
+
+      $.post('/api/friends', newFriend, data => {
+        if (data) {
+          console.log(data);
+        }
+      });
+      $.get('/api/match', data => {
+        console.log(data);
+        $('#match-name').text(data.name);
+        $('#match-photo').attr('src', data.photo);
+        // put stuff inside the modal
+      });
+    });
+  </script>
+</html>
